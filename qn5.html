@@ -25,8 +25,8 @@
         <input type="button" onclick="changeContent()" value="Change content">
         <script>
             function changeContent() {
-                var row = window.prompt("Enter the row number among 0,1,2");
-                var column = window.prompt("Enter the column number either 0,1");
+                var row = window.prompt("Enter the row number among 1,2,3");
+                var column = window.prompt("Enter the column number either 1,2");
                 var content = window.prompt("Enter what to update in selected cell:");
                 var change = document.getElementById("myTable").rows[parseInt(row)].cells;
                 change[parseInt(column)].innerHTML = content;
